@@ -1,0 +1,22 @@
+{
+  "name": "ab-datepicker",
+  "version": "1.0.0",
+  "description": "pick some dates",
+  "main": "js/datepicker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yext/ab-datepicker.git"
+  },
+  "keywords": [
+    "datepicker"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yext/ab-datepicker/issues"
+  },
+  "homepage": "https://github.com/yext/ab-datepicker#readme"
+}
