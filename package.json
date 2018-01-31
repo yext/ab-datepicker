@@ -1,6 +1,6 @@
 {
   "name": "ab-datepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "pick some dates",
   "main": "js/datepicker.js",
   "scripts": {
