@@ -248,7 +248,7 @@
 		'		<div class="datepicker-month-prev pull-left" role="button" aria-labelledby="datepicker-bn-prev-label-CALENDARID" tabindex="0"><span class="glyphicon glyphicon-triangle-left"></span></div>',
 		'		<div id="datepicker-month-CALENDARID" class="datepicker-month" tabindex="0" role="heading" aria-live="assertive" aria-atomic="true" title="Click or press the Enter key or the spacebar to change the month">July 2015</div>',
 		'	</div>',
-		'	<table class="datepicker-grid" role="grid" aria-readonly="true" aria-activedescendant="datepicker-err-msg-CALENDARID" aria-labelledby="datepicker-month-CALENDARID" tabindex="0">',
+		'	<table class="datepicker-grid" role="grid" aria-readonly="true" aria-activedescendant="datepicker-err-msg-CALENDARID" aria-labelledby="datepicker-month-CALENDARID" tabindex="-1">',
 		'		<thead role="presentation">',
 		'			<tr class="datepicker-weekdays">',
 		'				<th scope="col" id="day0-header-CALENDARID" class="datepicker-day" aria-label="Day 1"><abbr title="Sunday">Su</abbr></th>',
@@ -639,7 +639,11 @@
 			}
 			gridCells += ' data-value="' + curDay + '"';
 			gridCells += ' title="' + longdate + '"';
-			gridCells += ' headers="day' + weekday + '-header-' + this.id + '" role="gridcell" tabindex="-1" aria-selected="false">' + curDay;
+			if (curDayClass) {
+				gridCells += ' headers="day' + weekday + '-header-' + this.id + '" role="gridcell" tabindex="0" aria-selected="false">' + curDay;
+			} else {
+				gridCells += ' headers="day' + weekday + '-header-' + this.id + '" role="gridcell" tabindex="-1" aria-selected="false">' + curDay;
+			}
 			gridCells +=  '</td>';
 			if (weekday == lastDayOfWeek && curDay < numDays) {
 				// This was the last day of the week, close it out
