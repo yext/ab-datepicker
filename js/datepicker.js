@@ -235,7 +235,7 @@
 	'use strict';
 
 	var datepickerButton = [
-		'<a class="datepicker-button input-group-addon" role="button" aria-haspopup="true" tabindex="0" aria-labelledby="datepicker-bn-open-label-CALENDARID">',
+		'<a class="datepicker-button input-group-addon" role="button" tabindex="0" aria-labelledby="datepicker-bn-open-label-CALENDARID">',
 		'	<span class="glyphicon glyphicon-calendar" title="Select Date..."></span>',
 		'</a>'
 	];
@@ -246,7 +246,7 @@
 		'		<div class="datepicker-month-next pull-right" role="button" aria-labelledby="datepicker-bn-next-label-CALENDARID" tabindex="0"><span class="glyphicon glyphicon-triangle-right"></span></div>',
 		'		<div class="datepicker-month-fast-prev pull-left" role="button" aria-labelledby="datepicker-bn-fast-prev-label-CALENDARID" tabindex="0"><span class="glyphicon glyphicon-backward"></span></div>',
 		'		<div class="datepicker-month-prev pull-left" role="button" aria-labelledby="datepicker-bn-prev-label-CALENDARID" tabindex="0"><span class="glyphicon glyphicon-triangle-left"></span></div>',
-		'		<div id="datepicker-month-CALENDARID" class="datepicker-month" tabindex="0" role="heading" aria-live="assertive" aria-atomic="true" title="Click or press the Enter key or the spacebar to change the month">July 2015</div>',
+		'		<div id="datepicker-month-CALENDARID" class="datepicker-month" tabindex="0" aria-atomic="true" title="Click or press the Enter key or the spacebar to change the month">July 2015</div>',
 		'	</div>',
 		'	<table class="datepicker-grid" role="grid" aria-readonly="true" aria-activedescendant="datepicker-err-msg-CALENDARID" aria-labelledby="datepicker-month-CALENDARID" tabindex="-1">',
 		'		<thead role="presentation">',
